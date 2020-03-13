@@ -1,16 +1,10 @@
-import fastify from 'fastify';
+import express from 'express';
 import { router } from './router/index';
 
 const port: number = 4000;
 
-const app: any = fastify();
+const app: any = express();
 
-app.register(router, { prefix: './' })
+app.use('./', router);
 
-app.listen(port, (err: any, adress: any) => {
-  if(err) {
-    console.error('Failed...');
-  } else {
-    console.log('Success !!')
-  }
-})
+app.listen(port, () => console.log('success'));
