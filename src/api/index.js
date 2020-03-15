@@ -5,8 +5,8 @@ export const getWeather = async (lat, lon) => {
   const url = process.env.REACT_APP_API_URL;
   const reqUrl = `${url}/${key}/${lat},${lon}?lang=ja`;
   try {
-    const result = axios.get(reqUrl);
-    const data = result.data;
+    const result = await axios.get(reqUrl);
+    const data = await result.data;
     return data;
   } catch (err) {
     console.error(err)
