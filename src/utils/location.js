@@ -5,7 +5,7 @@ export const getLocation = () => {
         pos => {
           resolve({
             lat: pos.coords.latitude, // 緯度
-            lng: pos.coords.longitude // 経度
+            lon: pos.coords.longitude // 経度
           })
         },
         err => {
