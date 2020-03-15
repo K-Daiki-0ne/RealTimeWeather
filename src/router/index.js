@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Home } from '../views/Home';
 import { Weather } from '../views/Weather';
 
-export const Route = () => {
+export const RouterView = () => {
   return (
     <Router>
-      <Route path="/" component={Home} />
+      <Route path="/" exact component={Home} />
       <Route path="/result" component={Weather} />
     </Router>
   )
