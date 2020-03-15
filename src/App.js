@@ -1,3 +1,4 @@
 import React from 'react';
+import { RouterView } from './router/index';
 
-export const App = () => <h1>Hello World</h1>
+export const App = () => <RouterView />
