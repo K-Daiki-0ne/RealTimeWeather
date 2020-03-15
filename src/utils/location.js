@@ -1,30 +1,31 @@
-export const geoLocation = async () => {
+export const getLocation = () => {
   if (navigator.geolocation) {
-    try {
-      function (position) {
-        location = {
-          lat: position.coords.latitude,
-          lon: position.coords.longitude
-        };
-        console.log(location);
-        return location;
-      }
-    } catch(err) {
-      switch (err.cord) {
-        case 1:
-          alert('This terminal can not allow geolocation');
-          break;
-        case 2:
-          alert('Sorry, failed to get position');
-          break;
-        case 3:
-          alert('Sorry, timeout');
-          break;
-        default:
-          break;
-      }
-    }
+    return new Promise((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(
+        pos => {
+          resolve({
+            lat: pos.coords.latitude, // 緯度
+            lng: pos.coords.longitude // 経度
+          })
+        },
+        err => {
+          switch(err.code) {
+            case 1:
+              alert('This terminal can not allow get current position')
+              break
+            case 2:
+              alert('Sorry, failed to get position')
+              break
+            case 3:
+              alert('Sorry, timeout')
+              break
+            default:
+              break
+          }
+        },
+      )
+    })
   } else {
-    alert('Sorry, this terminal do not using geolocation')
+    alert('Sorry, this terminal can not use geolocation');
   }
 }
