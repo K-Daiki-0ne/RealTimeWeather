@@ -8,7 +8,6 @@ export const getWeather = async (lat, lon) => {
   try {
     const result = await fetch(reqUrl);
     const data = await result.data;
-    console.log(data)
     return data;
   } catch (err) {
     alert(err)
