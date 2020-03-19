@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { getLocation } from '../utils/location';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
 
-export const App = () => {
+export const Home = () => {
+  const [location, setLocation] = useState({});
+
+  useEffect(() => {
+    getLocation().then(data => setLocation(data));
+  }, [])
   return (
     <Container fixed>
       <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '95vh' }}>
