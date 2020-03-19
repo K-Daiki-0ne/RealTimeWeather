@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import { getLocation } from '../utils/location';
 
 export const Weather = () => {
-  const [location, setLocation] = useState()
-  useEffect(() => {
-    getLocation().then(data => setLocation(data));
-  }, []);
+  const [weather, setWeather] = useState([])
 
   return (
     <Container fixed>
