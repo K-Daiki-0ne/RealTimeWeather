@@ -1,0 +1,10 @@
+html, body {
+  display: flex;
+  margin: auto;
+  padding: auto;
+  background: lightslategray;
+}
+
+.App {
+  font-family: Roboto,Arial,Helvetica,sans-serif;
+}
