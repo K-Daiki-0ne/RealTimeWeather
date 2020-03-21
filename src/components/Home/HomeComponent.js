@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getLocation } from '../../utils/location';
-import { HomeHeader } from './HomeHeader/HomeHeader';
+import { Link } from 'react-router-dom';
 import './HomeComponent.css'
 
 export const HomeComponent = () => {
@@ -11,7 +11,16 @@ export const HomeComponent = () => {
 
   return (
     <div className="HomeContainer">
-      <HomeHeader />
+      <div className="HomeHead">
+        <h1>Weather App</h1>
+      </div>
+      <div className="HomeText">
+        <p>This application checks the weather where you are now .</p><br/>
+        <p className="HomeMargin">If you want to use this application that you click the button below</p>
+      </div>
+      <div className="HomeButton">
+        <button class="material-icons">search</button>
+      </div>
     </div>
   )
 }

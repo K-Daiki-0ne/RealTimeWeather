@@ -1,10 +1,12 @@
 html, body {
-  display: flex;
-  margin: auto;
-  padding: auto;
-  background: lightslategray;
+  margin: 0;
+  padding: 0;
 }
 
-.App {
-  font-family: Roboto,Arial,Helvetica,sans-serif;
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
 }

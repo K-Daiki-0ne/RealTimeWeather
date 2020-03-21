@@ -1,6 +1,53 @@
 .HomeContainer {
-  display: flex;
-  width: 100%;
-  margin-top: 15%;
-  background-color: tomato;
+  width: 38%;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+
+.HomeHead {
+  color: #616161;
+  font-size: 3.5em;
+  padding-bottom: 5px;
+  border-bottom: 0.5px solid #FFFFFF;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+.HomeText {
+  font-size: 1.5em;
+  color: #BBDEFB;
+  width: 100%;
+  margin-top: 5%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.HomeMargin {
+  margin-top: -6.5%;
+}
+
+.HomeButton {
+  margin-top: 15%;
+  /* background-color: #1A1A1D; */
+}
+
+.material-icons {
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 8em;
+  color: #1A1A1D;
+  background-color:white;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .HomeContainer {
+    width: 60%;
+  }
+  .HomeHead {
+    font-size: 1.2em;
+  }
+  .HomeText {
+    font-size: 0.5em;
+  }
+} 
