@@ -19,7 +19,7 @@ export const HomeComponent = () => {
         <p className="HomeMargin">If you want to use this application that you click the button below</p>
       </div>
       <div className="HomeButton">
-        <button class="material-icons">search</button>
+        <button className="material-icons">search</button>
       </div>
     </div>
   )

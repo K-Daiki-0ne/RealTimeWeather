@@ -29,13 +29,13 @@
 
 .HomeButton {
   margin-top: 15%;
-  /* background-color: #1A1A1D; */
 }
 
 .material-icons {
+  display: inline-block;
   border-radius: 50%;
   overflow: hidden;
-  font-size: 8em;
+  font-size: 7em;
   color: #1A1A1D;
   background-color:white;
 }
@@ -49,5 +49,8 @@
   }
   .HomeText {
     font-size: 0.5em;
+  }
+  .material-icons {
+    font-size: 4em;
   }
 } 
