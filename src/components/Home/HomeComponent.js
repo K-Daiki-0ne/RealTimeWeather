@@ -19,7 +19,7 @@ export const HomeComponent = () => {
         <p className="HomeMargin">If you want to use this application that you click the button below</p>
       </div>
       <div className="HomeButton">
-        <Link to={`/result`}>
+        <Link to={`/result?lat=${location.lat}&lon=${location.lon}`}>
           <button className="material-icons">search</button>
         </Link>
       </div>
