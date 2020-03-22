@@ -1,10 +1,10 @@
-.HomeContainer {
+.home-container {
   width: 38%;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
 
-.HomeHead {
+.home-head {
   color: #616161;
   font-size: 3.5em;
   padding-bottom: 5px;
@@ -15,7 +15,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
-.HomeText {
+.home-text {
   font-size: 1.5em;
   color: #BBDEFB;
   width: 100%;
@@ -23,11 +23,11 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.HomeMargin {
+.home-margin {
   margin-top: -6.5%;
 }
 
-.HomeButton {
+.home-button {
   margin-top: 15%;
 }
 
@@ -41,13 +41,13 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .HomeContainer {
+  .home-container {
     width: 60%;
   }
-  .HomeHead {
+  .home-head {
     font-size: 1.2em;
   }
-  .HomeText {
+  .home-text {
     font-size: 0.5em;
   }
   .material-icons {

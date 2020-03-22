@@ -10,15 +10,15 @@ export const HomeComponent = () => {
   }, [])
 
   return (
-    <div className="HomeContainer">
-      <div className="HomeHead">
+    <div className="home-container">
+      <div className="home-head">
         <h1>Weather App</h1>
       </div>
-      <div className="HomeText">
+      <div className="home-text">
         <p>This application checks the weather where you are now .</p><br/>
-        <p className="HomeMargin">If you want to use this application that you click the button below</p>
+        <p className="home-margin">If you want to use this application that you click the button below</p>
       </div>
-      <div className="HomeButton">
+      <div className="home-button">
         <Link to={`/result?lat=${location.lat}&lon=${location.lon}`}>
           <button className="material-icons">search</button>
         </Link>
