@@ -12,7 +12,7 @@
 }
 
 .circle {
-  border: 2px solid crimson;
+  border: 2px solid tomato;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +59,11 @@
   height: 10px;
 }
 
+.loading-text {
+  margin-top: 100%;
+  margin-left: -50%;
+}
+
 
 @keyframes rotateCircles {
   from {
@@ -67,3 +72,18 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    margin-left: -5.5%;
+  }
+  .circles-wrapper {
+    width: 200px;
+    height: 200px;
+  } 
+  .loading-text {
+    margin-top: 100%;
+    margin-left: -50%;
+  }
+  
+} 
