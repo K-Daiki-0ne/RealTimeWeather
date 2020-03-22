@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+
 .loading span {
   font-size: 25px;
+  font-family: 'Caveat', cursive;
   color:tomato;
   /* padding:; */
   visibility:hidden;
