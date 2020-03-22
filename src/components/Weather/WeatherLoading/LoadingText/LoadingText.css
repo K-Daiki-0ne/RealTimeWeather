@@ -66,27 +66,87 @@
 }
   
 @-webkit-keyframes load {
-  0% {visibility:hidden; opacity:0; text-shadow:none;}
-  50% {visibility:visible; opacity:1; text-shadow:0 1px 8px #616161, 0 -1px 8px #616161;}
-  100% {visibility:hidden; opacity:0; text-shadow:none;}
+  0% {
+    visibility:hidden; 
+    opacity:0; 
+    text-shadow:none;
+  }
+  50% {
+    visibility:visible; 
+    opacity:1; 
+    text-shadow:0 1px 8px #616161, 0 -1px 8px #616161;
+  }
+  100% {
+    visibility:hidden; 
+    opacity:0; 
+    text-shadow:none;
+  }
 }
 @-moz-keyframes load {
-  0% {visibility:hidden; opacity:0; text-shadow:none;}
-  50% {visibility:visible; opacity:1; text-shadow:0 1px 8px #616161, 0 -1px 8px #616161;}
-  100% {visibility:hidden; opacity:0; text-shadow:none;}
+  0% {
+    visibility:hidden; 
+    opacity:0; 
+    text-shadow:none;
+  }
+  50% {
+    visibility:visible; 
+    opacity:1; 
+    text-shadow:0 1px 8px #616161, 0 -1px 8px #616161;
+  }
+  100% {
+    visibility:hidden; 
+    opacity:0; 
+    text-shadow:none;
+  }
 }
 @-ms-keyframes load {
-  0% {visibility:hidden; opacity:0; text-shadow:none;}
-  50% {visibility:visible; opacity:1; text-shadow:0 1px 8px #616161, 0 -1px 8px#616161;}
-  100% {visibility:hidden; opacity:0; text-shadow:none;}
+  0% {
+    visibility:hidden; 
+    opacity:0; 
+    text-shadow:none;
+  }
+  50% {
+    visibility:visible; 
+    opacity:1; 
+    text-shadow:0 1px 8px #616161, 0 -1px 8px#616161;
+  }
+  100% {
+    visibility:hidden; 
+    opacity:0; 
+    text-shadow:none;
+  }
 }
 @-o-keyframes load {
-  0% {visibility:hidden; opacity:0; text-shadow:none;}
-  50% {visibility:visible; opacity:1; text-shadow:0 1px 8px #616161, 0 -1px 8px #616161;}
-  100% {visibility:hidden; opacity:0; text-shadow:none;}
+  0% {
+    visibility:hidden; 
+    opacity:0; 
+    text-shadow:none;
+  }
+  50% {
+    visibility:visible; 
+    opacity:1; 
+    text-shadow:0 1px 8px #616161, 0 -1px 8px #616161;
+  }
+  100% {
+    visibility:hidden; 
+    opacity:0; 
+    text-shadow:none;
+  }
 }
 @keyframes load {
-  0% {visibility:hidden; opacity:0; text-shadow:none;}
-  50% {visibility:visible; opacity:1; text-shadow:0 1px 8px #616161, 0 -1px 8px #616161;}
-  100% {visibility:hidden; opacity:0; text-shadow:none;}
+  0% {
+    visibility:hidden; 
+    opacity:0; 
+    text-shadow:none;
+  }
+  50% {
+    visibility:visible; 
+    opacity:1; 
+    text-shadow:0 1px 8px #616161, 0 -1px 8px #616161;
+  }
+  100% {
+    visibility:hidden; 
+    opacity:0; 
+    text-shadow:none;
+  }
 }
