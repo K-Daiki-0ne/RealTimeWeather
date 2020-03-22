@@ -4,8 +4,8 @@ export const getLocation = () => {
       navigator.geolocation.getCurrentPosition(
         pos => {
           resolve({
-            lat: pos.coords.latitude, // 緯度
-            lng: pos.coords.longitude // 経度
+            lat: pos.coords.latitude, 
+            lon: pos.coords.longitude 
           })
         },
         err => {
