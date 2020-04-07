@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+.home-text {
+  font-size: 1.5em;
+  color: #BBDEFB;
+  width: 100%;
+  margin-top: 5%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.home-margin {
+  margin-top: -6.5%;
+}
