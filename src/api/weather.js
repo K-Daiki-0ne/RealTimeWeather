@@ -20,7 +20,7 @@ export const getWeather = async (lon, lat) => {
       header: {
         'Access-Control-Allow-Origin': reqUrl
       },
-    });
+    })
       .then(data => data.json());
     console.log('Get API ... OK');
     return result

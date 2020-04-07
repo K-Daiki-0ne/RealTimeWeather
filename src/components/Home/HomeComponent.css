@@ -2,17 +2,6 @@
   width: 38%;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
-
-.home-head {
-  color: #616161;
-  font-size: 3.5em;
-  padding-bottom: 5px;
-  border-bottom: 0.5px solid #FFFFFF;
-  font-family: 'Liu Jian Mao Cao', cursive;
-  font-weight: bold;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
 .home-text {
