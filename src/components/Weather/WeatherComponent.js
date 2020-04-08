@@ -3,7 +3,7 @@ import { getWeather } from '../../api/weather'
 import { WeatherLoading } from './WeatherLoading/WeatherLoading';
 
 export const WeatherComponent = ({ location }) => {
-  const [weather, setWeather] = useState({});
+  const [weather, setWeather] = useState();
   const [loading, setLoading] = useState(false);
 
   let params = {}
@@ -17,12 +17,24 @@ export const WeatherComponent = ({ location }) => {
         [temp[0]]: temp[1]
       }
     })
-    console.log(params)
-    getWeather(params.lon, params.lat).then(data => setWeather(data))
-  }, [])
+  }, []);
+
+  useEffect(() => {
+    getWeather(params.lon, params.lat)
+      .then(data => setWeather(data.currently))
+      .then(setLoading(true))
+  }, [setLoading])
   return (
-    <div className="weather-container">
-      <WeatherLoading />
-    </div>
+    loading
+      ? (
+        <div className="weather-container">
+          <p>Hello World</p>
+        </div>
+      )
+      : (
+        <div className="weather-container">
+          <WeatherLoading />
+        </div>
+      )
   )
 }
