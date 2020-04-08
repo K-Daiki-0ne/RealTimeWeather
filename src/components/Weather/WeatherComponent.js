@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { getWeather } from '../../api/weather'
 import { WeatherLoading } from './WeatherLoading/WeatherLoading';
+import { WeatherResult } from './WeatherResult/WeatherResult';
 
 export const WeatherComponent = ({ location }) => {
-  const [weather, setWeather] = useState();
+  const [weather, setWeather] = useState([]);
   const [loading, setLoading] = useState(false);
 
   let params = {}
@@ -28,7 +29,7 @@ export const WeatherComponent = ({ location }) => {
     loading
       ? (
         <div className="weather-container">
-          <p>Hello World</p>
+          <WeatherResult weatherResult={weather} />
         </div>
       )
       : (
