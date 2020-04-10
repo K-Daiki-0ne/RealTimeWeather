@@ -2,7 +2,11 @@
   color: white;
   font-size: 3.5em;
   border-bottom: 1.2px solid #DDFFFF;
+}
 
+.now-time {
+  color: white;
+  font-size: 1.3em;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
